@@ -1,0 +1,50 @@
+{
+  "author": "Dubs",
+  "name": "my-ts-starter",
+  "version": "1.0.0",
+  "description": "a simple starter for typescript with my own setup",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "npm run lint && npm run webpack-prod",
+    "build-ts": "tsc -p .",
+    "cleanup": "rm -rf dist/*",
+    "watch": "tsc -w -p .",
+    "webpack-dev": "webpack --mode=development",
+    "webpack-prod": "webpack --mode=production",
+    "lint": "eslint --fix **/*.ts",
+    "test": "jest --coverage --verbose"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.6.8",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.2",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5"
+  },
+  "dependencies": {
+    "@overnightjs/core": "^1.6.9",
+    "@overnightjs/logger": "^1.1.9",
+    "@types/ramda": "^0.26.12",
+    "@typescript-eslint/eslint-plugin": "^1.10.2",
+    "@typescript-eslint/parser": "^1.10.2",
+    "body-parser": "^1.19.0",
+    "eslint": "^5.0.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "express": "^4.17.1",
+    "fp-ts": "^2.0.2",
+    "io-ts": "^2.0.0",
+    "path": "^0.12.7",
+    "prettier": "^1.18.2",
+    "ramda": "^0.26.1",
+    "winston": "^3.2.1"
+  }
+}
